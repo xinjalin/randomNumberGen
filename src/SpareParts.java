@@ -13,6 +13,6 @@ public class SpareParts {
     public String toString() {
         String serialNumber = Arrays.toString(sparePartSerialNumber);
         String genuine = String.valueOf(sparePartGenunine);
-        return "Serial Number:"+serialNumber+" Is the Part Genuine:"+genuine+" Spare Part Name:"+sparePartName;
+        return "Serial Number: "+serialNumber+"\nIs the Part Genuine: "+genuine+"\nSpare Part Name: "+sparePartName;
     }
 }

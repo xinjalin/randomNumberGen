@@ -12,6 +12,7 @@ public class GenuineCheck {
                 .limit(size)
                 .toArray();
 
+        // name of spare part
         String nameOfPart = "car horn";
 
         SpareParts orderOne = new SpareParts(numberGen, true, nameOfPart);
@@ -22,8 +23,12 @@ public class GenuineCheck {
         System.out.println(orderOne.sparePartName);
         System.out.println(orderOne);
 
-        String paymentType = "card";
+        // payment options card or cash
+        String paymentType = "cash";
+
         PaymentSelection selection = new PaymentSelection(paymentType);
+
+
         System.out.println(selection);
 
 

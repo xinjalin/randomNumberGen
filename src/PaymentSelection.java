@@ -1,15 +1,21 @@
+import java.util.Arrays;
+
 public class PaymentSelection {
     String paymentCard = "card";
     String paymentCash = "cash";
     String paymentError = "error";
+    String paymentChoice = "";
+
 
     public PaymentSelection(String paymentChoice) {
-        if (paymentChoice.equals(paymentCard)) {
-            paymentChoice = paymentCard;
-        } else if (paymentChoice.equals(paymentCash)) {
-            paymentChoice = paymentCash;
-        }else{
-            paymentChoice = paymentError;
+        switch (paymentChoice) {
+            case "card" -> this.paymentChoice = paymentCard;
+            case "cash" -> this.paymentChoice = paymentCash;
+            case "" -> this.paymentChoice = paymentError;
         }
+    }
+    @Override
+    public String toString() {
+        return paymentChoice;
     }
 }
