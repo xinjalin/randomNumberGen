@@ -16,7 +16,7 @@ public class GenuineCheck {
 
 
                 CustomerObject customerTemp = new CustomerObject(Integer.parseInt(customerIDInput), customerNameInput, customerPaymentType);
-                System.out.println(customerTemp);  // Output user input
+                System.out.println(customerTemp);                         // Output user input
 
 
 
