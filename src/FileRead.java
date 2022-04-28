@@ -7,7 +7,7 @@ public class FileRead {
     public static void main(String[] args) {
         try {
             // Open Customers.txt read lines. then split the stored line string to an array at the comma
-            File fileReadObject = new File("C:\\Users\\xin\\IdeaProjects\\randomNumberGen\\src\\customers.txt");
+            File fileReadObject = new File("src\\customers.txt");
             Scanner fileReader = new Scanner(fileReadObject);
             while (fileReader.hasNextLine()) {
                 String customerDataLine = fileReader.nextLine();
