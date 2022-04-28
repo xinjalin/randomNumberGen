@@ -31,8 +31,8 @@ public class SerialNumberGenerator {
                     .distinct()
                     .limit(size)
                     .toArray();
-            int numberAdd = numberGen[0];
-            unique = addToArray(unique.length, unique, numberAdd);
+
+            unique = addToArray(unique.length, unique, numberGen[0]);
         }
         System.out.println(Arrays.toString(unique));
     }
