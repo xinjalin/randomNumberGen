@@ -39,7 +39,7 @@ public class GenuineCheck {
 
 
                 System.out.println(Arrays.toString(orderOne.sparePartSerialNumber));
-                System.out.println(orderOne.sparePartGenunine);
+                System.out.println(orderOne.sparePartGenuine);
                 System.out.println(orderOne.sparePartName);
                 System.out.println(orderOne);
 
