@@ -11,10 +11,12 @@ public class FileRead {
             Scanner fileReader = new Scanner(fileReadObject);
             while (fileReader.hasNextLine()) {
                 String customerDataLine = fileReader.nextLine();
-                // to clean string needs work
-                //customerDataLine.replace("", "");
                 // to check unformatted data
                 // System.out.println(customerDataLine);
+
+                // to clean string of ""
+                customerDataLine = customerDataLine.replace("\"","");
+
 
                 String[] rawCustomerData = customerDataLine.split(",");
                 System.out.println(Arrays.toString(rawCustomerData));
